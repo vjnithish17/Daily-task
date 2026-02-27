@@ -1,13 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Niconne&family=Racing+Sans+One&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: #F1DCFF;
+}
+header {
+    border: 2px solid;
+    height: 100px;
+}
+
+.logo {
+    height: 100px;
+    width: 160px;
+    border: 2px solid;
+    margin-left: 50px;
+}
+
+.container {
+    height: 100px;
+    width: 460px;
+    border: 2px solid;
+    margin-right:30px ;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.video{
+      height: 330px;
+    width: 211.6vh;
+    border: 2px solid;
+}
 
 .foot{
-    border: 2px solid;
+    /* border: 2px solid; */
      height: 350px;
     width: 211.6vh;
 }
@@ -18,9 +46,9 @@
     width: 280px;
     position: relative;
     float: left;
-    margin: 10px;
-
-    box-shadow: 1px 6px 8px 3px #214369;
+    margin-left: 60px;
+    margin-right: 0px ;
+    box-shadow: 3px 3px 5px 0px #90accc;
 }
 
 .top-box {
@@ -29,9 +57,9 @@
     width: 280px;
     background-image: url(/3-jpg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:cover;
     object-fit: cover;
-    padding: 10px auto;
+    padding: 5px auto;
 }
 
 .bottom-box {
