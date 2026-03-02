@@ -1,42 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Racing+Sans+One&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Niconne&family=Racing+Sans+One&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: #F1DCFF;
+
+body {
+    background: repeating-linear-gradient(#c184dd, #5a51d8);
+    /* background:repeating-linear-gradient( (#e76b1e)) ; */
 }
+
 header {
-    border: 2px solid;
-    height: 100px;
+    /* border: 2px solid; */
+    height: 90px;
+    background: linear-gradient(#170533, #4a13a1cc, #4a13a1cc);
+    box-shadow: inset 2px -5px 18px 0px #362f99;
+    position: relative;
 }
 
 .logo {
-    height: 100px;
+    height: 89px;
     width: 160px;
-    border: 2px solid;
-    margin-left: 50px;
+    /* border: 2px  solid; */
+    /* margin-left: 50px; */
+    /* position: fixed; */
+}
+
+#logo1 {
+    height: 89px;
+    width: 220px;
+    border-radius: 5%;
+    object-fit: fill;
+    background-size: contain;
+    box-shadow: -1px -1px 2px 2px gray;
+
+
 }
 
 .container {
     height: 100px;
-    width: 460px;
-    border: 2px solid;
-    margin-right:30px ;
+    width: 660px;
+    /* border: 2px solid; */
+    margin-right: 150px;
     position: absolute;
-    top: 0;
+    /* position: relative; */
+    top: 0px;
     right: 0;
-}
-.video{
-      height: 330px;
-    width: 211.6vh;
-    border: 2px solid;
+    /* position: fixed; */
 }
 
-.foot{
+h1 a{
+    position: absolute;
+    top: 26px;
+    right: 500px;
+    cursor: pointer;
+    font-weight: 200;
+    font-family: "Racing Sans One", sans-serif;
+    text-decoration: none;
+     color: antiquewhite;
+}
+
+h2 a{
+    position: absolute;
+    top: 29px;
+    right: 340px;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: 200;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Racing Sans One", sans-serif;
+}
+
+h6 a{
+    position: absolute;
+    top: 29px;
+    right: 200px;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: 200;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Racing Sans One", sans-serif;
+}
+
+b a{
+    position: absolute;
+    top: 29px;
+    right: 30px;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: 200;
+    cursor: pointer;
+     text-decoration: none;
+    font-family: "Racing Sans One", sans-serif;
+}
+
+h1:hover {
+    text-shadow: 0px 3px 6px white;
+    /* text-decoration: underline blueviolet; */
+}
+
+h2:hover {
+    text-shadow: 0px 3px 6px white;
+}
+
+h6:hover {
+    text-shadow: 0px 3px 6px white;
+}
+
+b:hover {
+    text-shadow: 0px 3px 6px white;
+}
+
+.content {
+    height: 550px;
+    width: 211.6vh;
     /* border: 2px solid; */
-     height: 350px;
+    overflow: hidden;
+    box-shadow: -11px 0px 5px 1px #484949;
+}
+big{
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    color:tomato;
+}
+em{
+   position: absolute;
+   top: 400px;
+    left: 150px;  
+      color:tomato;
+}
+.content video {
+    height: 600px;
+    width: 211.6vh;
+    object-fit: cover;
+    cursor: default;
+    box-shadow: 3px 3px 5px 0px #030707;
+
+}
+.content big{
+    position: absolute;
+    font-size: 30px;
+}
+
+.foot {
+    /* border: 2px solid; */
+    height: 350px;
     width: 211.6vh;
 }
 
@@ -46,9 +158,17 @@ header {
     width: 280px;
     position: relative;
     float: left;
-    margin-left: 60px;
-    margin-right: 0px ;
-    box-shadow: 3px 3px 5px 0px #90accc;
+    margin-top: 30px;
+    margin-left: 45px;
+    /* margin-right: 0px ; */
+    box-shadow: 3px 3px 5px 0px #484949;
+    border-radius: 20px;
+  
+}
+
+.main-box:hover {
+    box-shadow: 3px 3px 5px 0px white;
+    cursor: default;
 }
 
 .top-box {
@@ -57,9 +177,11 @@ header {
     width: 280px;
     background-image: url(/3-jpg.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     object-fit: cover;
     padding: 5px auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .bottom-box {
@@ -69,17 +191,29 @@ header {
     position: relative;
     bottom: 0;
     padding: 10px;
-    background-color: rgba(206, 228, 247, 0.336);
+    background-color: rgba(250, 234, 245, 0.993);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
-h3 {
+img {
+    height: 200px;
+    width: 280px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: contain;
+    object-fit: cover;
+}
+
+h3 a{
     position: absolute;
     font-size: 20px;
     font-weight: 990px;
     left: 19px;
-    /* font-family: "Carattere", cursive; */
-    /* font-family: "Niconne", cursive; */
+    color: black;
     font-family: "Racing Sans One", sans-serif;
+   text-decoration: none;
 
 }
 
@@ -100,9 +234,9 @@ h4 {
     padding: 7px;
     position: absolute;
     font-size: 15px;
-    top: 9px;
+    top: 45px;
     right: 10px;
-    color: rgb(132, 233, 119);
+    color: rgba(214, 13, 13, 0.788);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
