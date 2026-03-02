@@ -20,7 +20,7 @@ header {
 }
 
 .logo {
-    height: 89px;
+    height: 90px;
     width: 160px;
     /* border: 2px  solid; */
     /* margin-left: 50px; */
@@ -28,7 +28,7 @@ header {
 }
 
 #logo1 {
-    height: 89px;
+    height: 90px;
     width: 220px;
     border-radius: 5%;
     object-fit: fill;
@@ -50,7 +50,7 @@ header {
     /* position: fixed; */
 }
 
-h1 a{
+h1 a {
     position: absolute;
     top: 26px;
     right: 500px;
@@ -58,10 +58,10 @@ h1 a{
     font-weight: 200;
     font-family: "Racing Sans One", sans-serif;
     text-decoration: none;
-     color: antiquewhite;
+    color: antiquewhite;
 }
 
-h2 a{
+h2 a {
     position: absolute;
     top: 29px;
     right: 340px;
@@ -73,7 +73,7 @@ h2 a{
     font-family: "Racing Sans One", sans-serif;
 }
 
-h6 a{
+h6 a {
     position: absolute;
     top: 29px;
     right: 200px;
@@ -85,7 +85,7 @@ h6 a{
     font-family: "Racing Sans One", sans-serif;
 }
 
-b a{
+b a {
     position: absolute;
     top: 29px;
     right: 30px;
@@ -93,7 +93,7 @@ b a{
     font-size: 30px;
     font-weight: 200;
     cursor: pointer;
-     text-decoration: none;
+    text-decoration: none;
     font-family: "Racing Sans One", sans-serif;
 }
 
@@ -121,29 +121,36 @@ b:hover {
     overflow: hidden;
     box-shadow: -11px 0px 5px 1px #484949;
 }
-big{
+
+big {
     position: absolute;
     top: 300px;
     left: 50px;
-    color:tomato;
+    font-size: 30px;
+    color: rgba(255, 99, 71, 0.671);
+    text-decoration: underline wavy rgba(153, 205, 50, 0.555);
+    font-family: "Racing Sans One", sans-serif;
+
 }
-em{
-   position: absolute;
-   top: 400px;
-    left: 150px;  
-      color:tomato;
+
+.content h6 {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    font-size: 35px;
+    text-decoration-thickness: 50px;
+    color: rgba(236, 85, 58, 0.63);
+    text-decoration: underline wavy rgba(153, 205, 50, 0.452);
+    font-family: "Niconne", cursive;
 }
+
 .content video {
-    height: 600px;
+    height: 615px;
     width: 211.6vh;
     object-fit: cover;
     cursor: default;
     box-shadow: 3px 3px 5px 0px #030707;
 
-}
-.content big{
-    position: absolute;
-    font-size: 30px;
 }
 
 .foot {
@@ -163,7 +170,7 @@ em{
     /* margin-right: 0px ; */
     box-shadow: 3px 3px 5px 0px #484949;
     border-radius: 20px;
-  
+
 }
 
 .main-box:hover {
@@ -206,14 +213,14 @@ img {
     object-fit: cover;
 }
 
-h3 a{
+h3 a {
     position: absolute;
     font-size: 20px;
     font-weight: 990px;
     left: 19px;
     color: black;
     font-family: "Racing Sans One", sans-serif;
-   text-decoration: none;
+    text-decoration: none;
 
 }
 
