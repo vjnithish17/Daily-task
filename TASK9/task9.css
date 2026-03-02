@@ -33,12 +33,13 @@ header {
 nav {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 90px;
 }
 
 nav a {
     /* position: absolute; */
     text-align: center;
+    font-weight: 600;
     margin: 20px 10px;
     padding: 10px;
     text-decoration: none;
@@ -48,7 +49,7 @@ nav a {
 
 .card {
     /* border: 2px solid; */
-    height: 430px;
+    height: 460px;
     width: 300px;
     margin: 20px 15px;
     box-shadow: inset -1px -1px 14px 0px gray;
@@ -80,11 +81,121 @@ nav a {
 }
 
 .card-foot {
-    padding: 1px;
+    padding: 15px;
 }
 
 .card-foot p {
     text-indent: 40px;
     word-spacing: 5px;
     text-align: justify;
+}
+
+.n1::after,
+.n1::before {
+    content: "";
+    width: 0px;
+    height: 1px;
+    /* border-radius: 20px; */
+    background: linear-gradient(95deg, rgba(255, 0, 0, 0.863), yellow, rgba(255, 0, 0, 0.863));
+    position: relative;
+    transition: 1s;
+}
+
+.n1::after {
+    position: absolute;
+     bottom: 0;
+    right: 330px;
+}
+
+.n1::before {
+    position: absolute;
+   top: 0;
+    left: 0;
+
+}
+
+.n1:hover::after,
+.n1:hover::before {
+    width: 70px;
+    /* top: 0; */
+}
+
+.n2::after,
+.n2::before {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background: linear-gradient(95deg, blueviolet, rgb(43, 255, 0),yellow);
+    position: relative;
+    transition: 1s;
+}
+
+.n2::after {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+.n2::before {
+    position: absolute;
+    top: 0;
+    right: 230px;
+}
+
+.n2:hover::after,
+.n2:hover::before {
+    width: 70px;
+}
+
+.n3::after,
+.n3::before {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background: linear-gradient(95deg, rgb(43, 226, 150), rgb(255, 217, 0),orange);
+    position: relative;
+    transition: 1s;
+}
+
+.n3::after {
+    position: absolute;
+   top: 0;
+    left: 200px;
+}
+
+.n3::before {
+    position: absolute;
+     bottom: 0;
+    right: 130px;
+}
+
+.n3:hover::after,
+.n3:hover::before {
+    width: 70px;
+}
+.n4::after,
+.n4::before {
+    content: "";
+    width: 0px;
+    height: 1px;
+    background: linear-gradient(95deg, rgb(43, 159, 226), rgb(0, 225, 255),red);
+    position: relative;
+    transition: 1s;
+}
+
+.n4::after {
+    position: absolute;
+   top: 0;
+    left: 310px;
+}
+
+.n4::before {
+    position: absolute;
+     bottom: 0;
+    right: 18px;
+}
+
+.n4:hover::after,
+.n4:hover::before {
+    width: 70px;
 }
