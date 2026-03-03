@@ -8,9 +8,11 @@
     font-weight: 500;
     font-style: italic;
 }
-body{
+
+body {
     background: linear-gradient(rgba(128, 128, 128, 0.151));
 }
+
 header {
     /* border: 2px solid; */
     box-shadow: 0 0 15px rgb(142, 185, 228);
@@ -54,61 +56,68 @@ nav a {
     height: 450px;
     width: 300px;
     margin: 20px 15px;
-    box-shadow:8px 12px 4px 0px rgb(104, 98, 102);
+    box-shadow: 8px 12px 4px 0px rgb(104, 98, 102);
     display: inline-block;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.main{
+
+.main {
     /* border:2px solid; */
-   height: 250px;
+    height: 250px;
     width: 300px;
-  /* margin: 10px auto; */
-  position: relative; 
+    /* margin: 10px auto; */
+    position: relative;
     overflow: hidden;
 }
-.main img{
+
+.main img {
     position: absolute;
-     height: 250px;
+    height: 250px;
     width: 300px;
     object-fit: cover;
-      border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    
+
 }
-.parent{
-      height: 250px;
+
+.parent {
+    height: 250px;
     width: 150px;
     position: absolute;
     background-color: 8px 12px 3px 0px gray;
     backdrop-filter: blur(100px);
     transition: 1s;
-   
-  
-    
+
+
+
 }
-.out1{
+
+.out1 {
     /* border: 2px solid red; */
-      height: 250px;
+    height: 250px;
     width: 150px;
     position: absolute;
-    transition: 2s;  
-      border-top-left-radius: 20px;
+    transition: 2s;
+    border-top-left-radius: 20px;
 }
-.out2{
+
+.out2 {
     /* border: 2px solid green; */
     height: 250px;
     width: 150px;
     position: absolute;
     right: 0;
     transition: 2s;
-        border-top-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
-.main:hover .out1{
+
+.main:hover .out1 {
     transform-origin: left;
-    transform:perspective(200px) rotatey(-90deg);
+    transform: perspective(200px) rotatey(-90deg);
 }
-.main:hover .out2{
+
+.main:hover .out2 {
     transform-origin: right;
     transform: perspective(200px) rotatey(90deg);
 }
@@ -149,13 +158,13 @@ nav a {
 
 .n1::after {
     position: absolute;
-     bottom: 0;
+    bottom: 0;
     right: 400px;
 }
 
 .n1::before {
     position: absolute;
-   top: 0;
+    top: 0;
     left: 5px;
 
 }
@@ -171,7 +180,7 @@ nav a {
     content: "";
     width: 0px;
     height: 1px;
-    background: linear-gradient(95deg, blueviolet, rgb(43, 255, 0),yellow);
+    background: linear-gradient(95deg, blueviolet, rgb(43, 255, 0), yellow);
     position: relative;
     transition: 1s;
 }
@@ -198,20 +207,20 @@ nav a {
     content: "";
     width: 0px;
     height: 1px;
-    background: linear-gradient(95deg, rgb(43, 226, 150), rgb(255, 217, 0),orange);
+    background: linear-gradient(95deg, rgb(43, 226, 150), rgb(255, 217, 0), orange);
     position: relative;
     transition: 1s;
 }
 
 .n3::after {
     position: absolute;
-   top: 0;
+    top: 0;
     left: 250px;
 }
 
 .n3::before {
     position: absolute;
-     bottom: 0;
+    bottom: 0;
     right: 160px;
 }
 
@@ -219,31 +228,32 @@ nav a {
 .n3:hover::before {
     width: 70px;
 }
+
 .n4::after,
 .n4::before {
     content: "";
     width: 0px;
     height: 1px;
-    background:linear-gradient(95deg, rgb(43, 159, 226), rgb(0, 225, 255),red);
+    background: linear-gradient(95deg, rgb(43, 159, 226), rgb(0, 225, 255), red);
     position: relative;
     transition: 1s;
-    
+
 }
 
 .n4::after {
     position: absolute;
-   top: 0;
+    top: 0;
     left: 380px;
 }
 
 .n4::before {
     position: absolute;
-     bottom: 0;
+    bottom: 0;
     right: 29px;
 }
 
 .n4:hover::after,
 .n4:hover::before {
     width: 70px;
-   
-} 
+
+}
