@@ -8,24 +8,26 @@
     font-weight: 500;
     font-style: italic;
 }
-
+body{
+    background: linear-gradient(rgba(128, 128, 128, 0.151));
+}
 header {
     /* border: 2px solid; */
     box-shadow: 0 0 15px rgb(142, 185, 228);
     /* padding: 10px; */
     position: relative;
-    background-color: rgba(234, 247, 199, 0.719);
+    background-color: rgba(20, 1, 63, 0.719);
 }
 
 .logo {
     /* border: 2px solid; */
-    height: 50px;
+    height: 55px;
     width: 70px;
 }
 
 .logo img {
     /* border: 2px solid; */
-    height: 50px;
+    height: 55px;
     width: 110px;
     object-fit: fill;
 }
@@ -40,31 +42,75 @@ nav a {
     /* position: absolute; */
     text-align: center;
     font-weight: 600;
-    margin: 20px 10px;
-    padding: 10px;
+    margin: 20px auto;
+    padding: 30px;
     text-decoration: none;
-    color: blue;
+    color: rgb(234, 234, 253);
 
 }
 
 .card {
     /* border: 2px solid; */
-    height: 460px;
+    height: 450px;
     width: 300px;
     margin: 20px 15px;
-    box-shadow: inset -1px -1px 14px 0px gray;
+    box-shadow:8px 12px 4px 0px rgb(104, 98, 102);
     display: inline-block;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
-.card .card-img img {
-    /* border: 2px solid; */
-    height: 250px;
+.main{
+    /* border:2px solid; */
+   height: 250px;
+    width: 300px;
+  /* margin: 10px auto; */
+  position: relative; 
+    overflow: hidden;
+}
+.main img{
+    position: absolute;
+     height: 250px;
     width: 300px;
     object-fit: cover;
-    border-top-right-radius: 20px;
-
+      border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+.parent{
+      height: 250px;
+    width: 150px;
+    position: absolute;
+    background-color: 8px 12px 3px 0px gray;
+    backdrop-filter: blur(100px);
+    transition: 1s;
+   
+  
+    
+}
+.out1{
+    /* border: 2px solid red; */
+      height: 250px;
+    width: 150px;
+    position: absolute;
+    transition: 2s;  
+      border-top-left-radius: 20px;
+}
+.out2{
+    /* border: 2px solid green; */
+    height: 250px;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    transition: 2s;
+        border-top-right-radius: 20px;
+}
+.main:hover .out1{
+    transform-origin: left;
+    transform:perspective(200px) rotatey(-90deg);
+}
+.main:hover .out2{
+    transform-origin: right;
+    transform: perspective(200px) rotatey(90deg);
 }
 
 .card a {
@@ -81,7 +127,7 @@ nav a {
 }
 
 .card-foot {
-    padding: 15px;
+    padding: 8px;
 }
 
 .card-foot p {
@@ -104,13 +150,13 @@ nav a {
 .n1::after {
     position: absolute;
      bottom: 0;
-    right: 330px;
+    right: 400px;
 }
 
 .n1::before {
     position: absolute;
    top: 0;
-    left: 0;
+    left: 5px;
 
 }
 
@@ -133,13 +179,13 @@ nav a {
 .n2::after {
     position: absolute;
     bottom: 0;
-    left: 100px;
+    left: 130px;
 }
 
 .n2::before {
     position: absolute;
     top: 0;
-    right: 230px;
+    right: 280px;
 }
 
 .n2:hover::after,
@@ -160,13 +206,13 @@ nav a {
 .n3::after {
     position: absolute;
    top: 0;
-    left: 200px;
+    left: 250px;
 }
 
 .n3::before {
     position: absolute;
      bottom: 0;
-    right: 130px;
+    right: 160px;
 }
 
 .n3:hover::after,
@@ -178,24 +224,26 @@ nav a {
     content: "";
     width: 0px;
     height: 1px;
-    background: linear-gradient(95deg, rgb(43, 159, 226), rgb(0, 225, 255),red);
+    background:linear-gradient(95deg, rgb(43, 159, 226), rgb(0, 225, 255),red);
     position: relative;
     transition: 1s;
+    
 }
 
 .n4::after {
     position: absolute;
    top: 0;
-    left: 310px;
+    left: 380px;
 }
 
 .n4::before {
     position: absolute;
      bottom: 0;
-    right: 18px;
+    right: 29px;
 }
 
 .n4:hover::after,
 .n4:hover::before {
     width: 70px;
-}
+   
+} 
