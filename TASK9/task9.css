@@ -68,7 +68,7 @@ nav a {
     width: 300px;
     /* margin: 10px auto; */
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .main img {
@@ -80,19 +80,14 @@ nav a {
     border-top-left-radius: 20px;
 
 }
-
 .parent {
     height: 250px;
     width: 150px;
     position: absolute;
-    background-color: 8px 12px 3px 0px gray;
-    backdrop-filter: blur(100px);
+    background-color:rgba(145, 144, 144, 0.041);
+    backdrop-filter: blur(10px);
     transition: 1s;
-
-
-
 }
-
 .out1 {
     /* border: 2px solid red; */
     height: 250px;
@@ -101,7 +96,6 @@ nav a {
     transition: 2s;
     border-top-left-radius: 20px;
 }
-
 .out2 {
     /* border: 2px solid green; */
     height: 250px;
@@ -111,16 +105,15 @@ nav a {
     transition: 2s;
     border-top-right-radius: 20px;
 }
-
 .main:hover .out1 {
     transform-origin: left;
-    transform: perspective(200px) rotatey(-90deg);
+    transform: perspective(1000px) rotatey(-85deg);
 }
 
-.main:hover .out2 {
+ .main:hover .out2 {
     transform-origin: right;
-    transform: perspective(200px) rotatey(90deg);
-}
+    transform: perspective(1000px) rotatey(85deg);
+} 
 
 .card a {
     /* border: 2px solid black; */

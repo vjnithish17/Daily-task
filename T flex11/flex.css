@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  
+}
+body{
+    background: #1c1c1c;
+}
+header{
+    /* border: 2px solid red ; */
+     display: flex;
+     justify-content: space-between;
+     background: #121212a9;
+     border-bottom: 1px solid #bfa14a;
+     padding: 0px 0px;
+
+}
+.logo{
+    /* border: 2px solid red; */
+    height: 80px;
+    width: 350px;
+}
+.logo img{
+     height:80px;
+    width:350PX;
+    object-fit: cover;
+    padding: 0PX 10PX;
+}
+nav {
+    /* border: 2px solid; */
+    width: 35rem;
+    align-self: center;
+     
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly; 
+
+}
+nav ul li{
+    list-style: none;
+    position: relative;
+   
+}
+nav ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #bfa14a;  
+ }  
+ /* before after using  */
+.nav-link a::before,a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #bfa14a;
+    transition:1s ease;
+}   
+ .nav-link a::before{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.nav-link a::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav-link a:hover::before,a:hover:after {
+    width: 60px;
+}
+/* Header section end */
+
+section{
+     /* border: 2px solid;  */
+    height: 81vh;
+    position: relative;
+    display: flex;
+     justify-content: end;
+}
+img{
+    position: absolute;
+    height: 87vh;
+    width: 211.8vh;
+    background-size:cover ;
+
+}
+h1{
+    position: absolute;
+    color: rgba(192, 166, 166, 0.596);
+    align-self: center;
+      font-family: "Niconne", cursive;
+  
+}  
+
