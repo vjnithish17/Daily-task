@@ -17,8 +17,8 @@
     height:150px;
     width: 150px;
     border-radius: 50%;
-    /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
     background:linear-gradient(to top right, #F2B104,#F59E02,#F79101,#F68002);
     /* bottom: 299px;
     left: 20px; */

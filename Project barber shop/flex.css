@@ -73,37 +73,50 @@ nav ul li a:hover {
 
 .btn{
     /* border: 2px solid red; */
+    border: 2px solid #ffa60046;
     height: 50px;
-    width: 250px;
+    width: 150px;
     align-self: center;
    position: relative;
+   margin-right: 90px;
+   border-radius: 9px;
+   overflow: hidden;
+      background-color: #f08a2aa6;
   
 }
-.b1{
-      /* border:1px solid #bfa14a; */
-      height: 50px;
-      width: 150px;
-    background-color: #f08a2aa6;
-     cursor: pointer;
-    transition: 0.1s;
-    position: absolute;
+.outside{
+       transition: 1s;
+
 }
-.box1{
-    border:1px solid #e04040 ;
+.box{
+    border-top-right-radius: 10px;
     position: absolute;
-    width:0px;
+    background-color: #cfba94;
     height: 50px;
-    top: 0;
-    left: 0px;
-    background-color:aquamarine ;
-} 
-.btn h2{
+    width: 150px;
+    left: -150px;
+}
+.btn:hover a{
+         background: linear-gradient(#fff8d3, #000000, #050202);
+    color: transparent;
+    background-clip: text;
+
+}
+.btn:hover .box{
+     border: none;
+    left:0;
+}
+
+.btn a{
     position: absolute;
     top: 5px;
     left: 20px;
     color:#eaeaea;
+    text-decoration: none;
+    font-size: 25px;
       font-family: "Playfair Display", serif;
       font-weight: 400;
+      transition-delay: 0.5s;
 } 
 .btn:hover .box1{
     width: 150px;
