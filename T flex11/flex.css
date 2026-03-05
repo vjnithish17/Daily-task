@@ -1,98 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  
-}
-body{
-    background: #1c1c1c;
-}
-header{
-    /* border: 2px solid red ; */
-     display: flex;
-     justify-content: space-between;
-     background: #121212a9;
-     border-bottom: 1px solid #bfa14a;
-     padding: 0px 0px;
 
 }
-.logo{
-    /* border: 2px solid red; */
+
+
+
+header {
+    /* border: 2px solid red ; */
+    display: flex;
+    justify-content: space-between;
+    background: #12121267;
+    /* border-bottom: 1px solid #bfa14a; */
+    padding: 2px 0px;
+    position: relative;
+
+}
+
+.logo {
+    /* border: 2px so   lid red; */
+    height: 70px;
+    width: 250px;
+}
+
+.logo img {
+    /* border: 2px solid; */
     height: 80px;
     width: 350px;
-}
-.logo img{
-     height:80px;
-    width:350PX;
     object-fit: cover;
-    padding: 0PX 10PX;
 }
+
 nav {
     /* border: 2px solid; */
-    width: 35rem;
+    width: 700px;
     align-self: center;
-     
-}
-nav ul{
-    display: flex;
-    justify-content: space-evenly; 
+    position: absolute;
+    left: 35%;
 
 }
-nav ul li{
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+nav ul li {
     list-style: none;
     position: relative;
-   
+
 }
-nav ul li a{
+
+nav ul li a {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
-    color: #bfa14a;  
- }  
- /* before after using  */
-.nav-link a::before,a::after{
+    color: #eaeaea;
+    padding: 10px 20px;
+    font-family: "Playfair Display", serif;
+}
+
+nav ul li a:hover {
+      background: linear-gradient(#fff8d3, #FFA500, #ffffff);
+    color: transparent;
+    background-clip: text;          
+}
+
+.btn{
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 250px;
+    align-self: center;
+   position: relative;
+  
+}
+.b1{
+      /* border:1px solid #bfa14a; */
+      height: 50px;
+      width: 150px;
+    background-color: #f08a2aa6;
+     cursor: pointer;
+    transition: 0.1s;
+    position: absolute;
+}
+.box1{
+    border:1px solid #e04040 ;
+    position: absolute;
+    width:0px;
+    height: 50px;
+    top: 0;
+    left: 0px;
+    background-color:aquamarine ;
+} 
+.btn h2{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    color:#eaeaea;
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+} 
+.btn:hover .box1{
+    width: 150px;
+    
+}
+
+/* before after using  */
+.nav-link a::before,
+a::after {
     content: "";
     width: 0px;
     height: 2px;
-    background-color: #bfa14a;
-    transition:1s ease;
-}   
- .nav-link a::before{
+    background-color: #D4af37;
+    transition: 0.3s;
+}
+
+.nav-link a::before {
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    left: 15px;
 }
-.nav-link a::after{
+
+.nav-link a::after {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 15px;
 }
-.nav-link a:hover::before,a:hover:after {
+
+.nav-link a:hover::before,
+a:hover:after {
     width: 60px;
 }
+
 /* Header section end */
 
-section{
-     /* border: 2px solid;  */
-    height: 81vh;
-    position: relative;
+section {
+    /* border: 2px solid;  */
+    height: 100%;
+    /* position: relative;
     display: flex;
-     justify-content: end;
-}
-img{
-    position: absolute;
-    height: 87vh;
-    width: 211.8vh;
-    background-size:cover ;
+     justify-content: end; */
 
 }
-h1{
+
+img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+}
+
+h1 {
     position: absolute;
     color: rgba(192, 166, 166, 0.596);
     align-self: center;
-      font-family: "Niconne", cursive;
-  
-}  
+    font-family: "Niconne", cursive;
 
+}
