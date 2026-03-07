@@ -209,7 +209,8 @@ background-repeat: no-repeat;
 }
 .container{
     border: 2px solid green;
-    height: 100vh;
+    height: 50vh;
+    background: url(/img/project-img/bg-clr.jpeg);
 }
 .con-header{
       /* border: 2px solid red; */
@@ -219,10 +220,11 @@ background-repeat: no-repeat;
     position: relative;
     padding: 5px 0px;
 }
-h2{
+.con-header h2{
     font-size: 30px;
     word-spacing: 2px;
-    padding: 1px 150px;
+    padding: 1px 90px;
+    color: whitesmoke;
 }
 .con-header .flip{
     /* border: 2px solid; */
@@ -231,7 +233,7 @@ h2{
     width: 100%;
     top: 60px;
 }
-p{
+.con-header p{
     /* border: 2px solid red;   */
     margin: 10px auto;
 }
@@ -292,4 +294,8 @@ p{
     height: 1px;
     background: #52361b;
     margin: 0 auto;
+}
+.head-clr{
+    font-family: var(---FONT-MAIN);
+    color: #FFA500;
 }
