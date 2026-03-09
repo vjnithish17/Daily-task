@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Niconne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
-    --color-text-:#12121238;
+
+:root {
+    --bg-color1-:#000000f8;
+    --bg-color2-: linear-gradient(#000000d7,gray,#000000e5);
     ---FONT-MAIN: "Cinzel Decorative", serif;
-     ---font-head-: "Playfair Display", serif;
+    ---font-head-: "Playfair Display", serif;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 header {
     display: flex;
     justify-content: space-between;
-    background:var(--color-text-);
+    background:#12121275;
     /* border-bottom: 1px solid #bfa14a; */
     padding: 2px 0px;
     position: relative;
@@ -32,6 +36,7 @@ header {
     width: 350px;
     object-fit: cover;
 }
+
 /* logo section end */
 
 
@@ -54,27 +59,29 @@ nav ul {
 nav ul li {
     list-style: none;
     position: relative;
-
+    overflow: hidden;
 }
 
 nav ul li a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+    letter-spacing: 2px;
     text-decoration: none;
     color: #eaeaea;
-    padding: 10px 20px;
-    font-family: "Playfair Display", serif;
+    padding: 10px 14px;
+    font-family: "Playfair Display", Helvetica, Arial, sans-serif;
 }
 
 nav ul li a:hover {
-      background: linear-gradient(#fff8d3, #FFA500, #ffffff);
+    background: linear-gradient(#fff8d3, #FFA500, #ffffff);
     color: transparent;
-    background-clip: text;          
+    background-clip: text;
 }
+
 /* navigation end */
 
 
-header .btn{
+header .btn {
     position: absolute;
     top: 10px;
     right: 100px;
@@ -82,17 +89,19 @@ header .btn{
     height: 50px;
     width: 150px;
     align-self: center;
-   position: relative;
-   border-radius:15px;
-   overflow: hidden;
-  background-color: #f0a534b4;
-    
-}
-.outside{
-       transition: 0.5s;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f0a534b4;
 
 }
-.box{
+
+.outside {
+    transition: 0.5s;
+
+}
+
+.box {
     border-top-right-radius: 10px;
     position: absolute;
     background-color: #ffffff0e;
@@ -100,26 +109,33 @@ header .btn{
     width: 150px;
     left: -150px;
 }
-.btn:hover .box{
-    left:0; 
+
+.btn:hover .box {
+    left: 0;
 }
-.btn a{
+
+.btn a {
     position: absolute;
     top: 5px;
     left: 20px;
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 24px;
-      font-family: "Playfair Display", serif;
-      font-weight: 100;
-      transition: 0.9s;
-} 
-.btn:hover a{
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    transition: 0.9s;
+}
+
+.btn:hover a {
     background: linear-gradient(#fff8d3, #FFA500, #daa9a9);
     color: transparent;
-    background-clip: text; 
+    background-clip: text;
 }
+
+/* button box end */
+
 /* ::before ::after using  */
+
 .nav-link a::before,
 a::after {
     content: "";
@@ -127,128 +143,149 @@ a::after {
     height: 2px;
     background-color: #D4af37;
     transition: 0.3s;
+
 }
 
 .nav-link a::before {
     position: absolute;
     bottom: 0px;
-    left: 15px;
+    left: 13px;
 }
 
 .nav-link a::after {
     position: absolute;
     top: 0;
-    right: 15px;
+    right: 14px;
 }
 
 .nav-link a:hover::before,
- a:hover:after {
+a:hover:after {
     width: 60px;
 }
 
-/* button box end */
-header #add i{
-     position: absolute;
+header #add i {
+    position: absolute;
     color: #fff8d3;
     font-size: 20px;
     right: 40px;
     top: 25px;
 }
-header #add i:hover{
-     color: #fdf90a;
+
+header #add i:hover {
+    color: #fdf90a;
 }
-.home{
+
+/* home rightside content */
+
+.home {
     height: 100vh;
-    background: url(/img/project-img/bg2.jpg);
-background-repeat: no-repeat;
+    background: url(/img/project-img/bg.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
-.h-content{
+
+.h-content {
     position: absolute;
     /* border: 2px solid; */
-   height: 350px;
-   width: 480px;
-   margin: 140px 130px auto;
-   cursor:default;
+    height: 350px;
+    width: 480px;
+    margin: 140px 130px auto;
+    cursor: default;
 }
-.h-content h2{
+
+.h-content h2 {
     font-family: var(---FONT-MAIN);
-     font-weight: 700;
+    font-weight: 700;
     font-size: 45px;
-      background: linear-gradient(to bottom right,#ffffffbe,#ffa600ef,#ffa600fb,#ffffffbe);
+    background: linear-gradient(to bottom right, #ffffffbe, #ffa600ef, #ffa600fb, #ffffffbe);
     color: transparent;
-    background-clip: text; 
+    background-clip: text;
 }
-.h-content h4{
-      font-family: "Playfair Display", serif;
+
+.h-content h4 {
+    font-family: "Playfair Display", serif;
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0px;
     color: rgb(230, 217, 215);
 }
-.h-content p{
+
+.h-content p {
     text-align: justify;
     font-weight: 300;
-      background: linear-gradient(#fff8d3, #fdd384);
+    background: linear-gradient(#fff8d3, #fdd384);
     color: transparent;
-    background-clip: text; 
+    background-clip: text;
 }
-.main-btn{
-    margin:30px 0;
+
+.main-btn {
+    margin: 30px 0;
     padding: 8px 26px;
     background-color: var(--color-text-);
     color: #FFA500;
-    border:1px solid #ffa60094;
+    border: 1px solid #ffa60094;
     border-radius: 7px;
     cursor: pointer;
 }
-.main-btn:hover{
-     box-shadow:0px 0px 6px 0px;
+
+.main-btn:hover {
+    box-shadow: 0px 0px 6px 0px;
 }
+
 /* Header section end */
 
 
-.container{
+
+.container {
     /* border: 2px solid green; */
     height: 100vh;
-    background:#1B1B1B;
+    background:var(--bg-color2-);
 }
-.con-header{
-      /* border: 2px solid red; */
+
+.con-header {
+    /* border: 2px solid red; */
     height: 100px;
     width: 800px;
     margin: 0px auto;
     position: relative;
 }
-.con-body{
+
+.con-body {
     /* border: 2px solid red; */
     margin: 80px 130px;
     display: flex;
     justify-content: center;
     gap: 50px;
-}
-.con-header h2{
+}        
+
+      /* page2 About */
+
+.con-header h2 {
     position: absolute;
     font-size: 30px;
     word-spacing: 2px;
-     margin: 60px auto;
+    margin: 60px auto;
     padding: 1px 100px;
     color: whitesmoke;
     font-family: var(---font-head-);
-}
-.con-header .flip{
+}     
+             /* line design */
+
+.con-header .flip {
     /* border: 2px solid; */
     position: absolute;
     display: block;
     width: 100%;
     top: 60px;
 }
-.con-header p{
+
+.con-header p {
     /* border: 2px solid red;   */
     margin: 80px auto;
 }
-.con-header p .deg1{
-     position: absolute;
+
+.con-header p .deg1 {
+    position: absolute;
     bottom: 2px;
     left: 0px;
     right: 30px;
@@ -259,7 +296,8 @@ background-repeat: no-repeat;
     transform: rotate(135deg);
     margin: 0 auto;
 }
-.con-header p .deg2{
+
+.con-header p .deg2 {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -271,7 +309,8 @@ background-repeat: no-repeat;
     transform: rotate(135deg);
     margin: 0 auto;
 }
-.con-header p .deg3{
+
+.con-header p .deg3 {
     position: absolute;
     bottom: 2px;
     left: 30px;
@@ -283,6 +322,7 @@ background-repeat: no-repeat;
     transform: rotate(135deg);
     margin: 0 auto;
 }
+
 .con-header p.flip::before {
     position: absolute;
     bottom: 4px;
@@ -294,6 +334,7 @@ background-repeat: no-repeat;
     background: #52361b;
     margin: 0 auto;
 }
+
 .con-header p.flip:after {
     position: absolute;
     bottom: 4px;
@@ -304,62 +345,84 @@ background-repeat: no-repeat;
     height: 1px;
     background: #52361b;
     margin: 0 auto;
-}
-.head-clr{
+}           
+
+.head-clr {
     font-family: var(---FONT-MAIN);
     color: #FFA500;
-}
+}              
+                    /* line design end */
 
-.body-left,.body-right{
-     /* border: 2px solid rgb(0, 55, 106); */
+.body-left,
+.body-right {
+    /* border: 2px solid rgb(0, 55, 106); */
     height: 350px;
     width: 700px;
     margin-top: 10px;
-   
+
 }
-.body-right img{
-      height: 350px;
+
+.body-right img {
+    height: 350px;
     width: 600px;
     object-fit: cover;
 }
-.srs{
-    background: #000000;
+
+
+
+
+/* page3 servics */
+.srs {
+    background:var(--bg-color1-);
 }
-.title h2{
+
+.title h2 {
     font-family: var(---font-head-);
-    margin: 70px 210px auto;
+    margin: 70px 140px auto;
 }
-.title pre{
+
+.title pre {
     position: absolute;
     margin: 180px 120px;
-    color:white;
+    color: white;
 }
-section{
+
+section {
     margin-top: 160px;
     border: 2px solid yellow;
     height: 50vh;
     display: flex;
     gap: 3px;
-    position: relative;
+    
 }
-.s-box1{
-    /* position: absolute; */
+
+.s-box1 {
     border: 2px solid red;
     width: 100%;
 }
-.out{
+
+.out {
     border: 2px solid blueviolet;
     height: 20vh;
-}
-.out .s-icon{
-    position: absolute;
-    border: 2px solid red;
-    height: 60px;
-    width: 60px;
-    margin: 30px 130px auto;
+   
 }
 
-.in{
-      border: 2px solid rgb(86, 226, 43);
+.s-icon {
+    position:absolute;
+    border: 2px solid red;
+    height: 60px;
+    width: 80px;
+    /* margin: 30px 130px auto; */
+}
+.icon{
+    position: absolute;
+    border: 2px solid rgb(0, 255, 76);
+    height: 60px;
+    width: 60px;
+    transform: translate(135DEG);
+}
+
+.in {
+    border: 2px solid rgb(86, 226, 43);
     height: 30vh;
 }
