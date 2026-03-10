@@ -15,10 +15,13 @@
 }
 
 header {
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
-    background: #12121275;
-    /* border-bottom: 1px solid #bfa14a; */
+    background: #12121298;
+    border-bottom: 1px solid #bfa24a1e;
     padding: 2px 0px;
     position: relative;
 
@@ -52,7 +55,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 70px;
 
 }
 
@@ -68,7 +71,8 @@ nav ul li a {
     letter-spacing: 2px;
     text-decoration: none;
     color: #eaeaea;
-    padding: 10px 14px;
+    /* padding: 10px 14px; */
+    padding: -0.9em 2em;
     font-family: "Playfair Display", Helvetica, Arial, sans-serif;
 }
 
@@ -79,6 +83,34 @@ nav ul li a:hover {
 }
 
 /* navigation end */
+/* ::before ::after using  */
+
+nav ul a::before,
+a::after {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #D4af37;
+    transition: 0.3s;
+
+}
+
+nav ul a::before {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+nav ul a::after {
+    position: absolute;
+    top: 0;
+   right: 0px;
+}
+
+nav ul a:hover::before,
+a:hover:after {
+    width: 60px;
+}
 
 
 header .btn {
@@ -134,34 +166,6 @@ header .btn {
 
 /* button box end */
 
-/* ::before ::after using  */
-
-.nav-link a::before,
-a::after {
-    content: "";
-    width: 0px;
-    height: 2px;
-    background-color: #D4af37;
-    transition: 0.3s;
-
-}
-
-.nav-link a::before {
-    position: absolute;
-    bottom: 0px;
-    left: 13px;
-}
-
-.nav-link a::after {
-    position: absolute;
-    top: 0;
-    right: 14px;
-}
-
-.nav-link a:hover::before,
-a:hover:after {
-    width: 60px;
-}
 
 header #add i {
     position: absolute;
@@ -178,7 +182,7 @@ header #add i:hover {
 /* home rightside content */
 
 .home {
-    height: 40rem;
+    height: 100vh;
     background: url(/img/project-img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -187,10 +191,17 @@ header #add i:hover {
 .h-content {
     position: absolute;
     /* border: 2px solid; */
-    height: 350px;
     width: 480px;
-    margin: 140px 130px auto;
     cursor: default;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    top: 55%;
+    left: 10%;
+    transform: translateY(-50%);
+    
 }
 
 .h-content h2 {
@@ -239,7 +250,7 @@ header #add i:hover {
 .container {
     /* border: 2px solid green; */
     height: 100vh;
-    background: var(--bg-color2-);
+    background: rgba(245, 245, 245, 0);
 
 }
 
@@ -445,14 +456,14 @@ section {
 
 
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:576px) {
 
-    #bar, .fa-bars{
+    .fa-bars{
         display: block;
     }
     .home{
         height: 19rem;
-        width: 400px;
+        /* width: 400px; */
     }
 
     .end{
@@ -464,9 +475,11 @@ section {
         position: relative;
     }
     .h-content{
+        /* border: 1px solid red; */
         /* height: 400px; */
-        width: 350px;
-        margin: 20px 30px;
+        gap: 5px;
+       width: 202px;
+       top: 25%;
     }
     .h-content h2 {
         font-size: 20px;
@@ -477,11 +490,12 @@ section {
     }
     .h-content p{
         text-align: justify;
-        font-size: 15px;
+        font-size: 8px;
     }
-    .h-content .main-btn{
+        .h-content .main-btn {
         margin: 10px 0;
-        font-size: 10px;
+        font-size: 9px;
+        padding: 3px 3px;
     }
 
     .logo img {
@@ -495,18 +509,35 @@ section {
         margin: 0 0;
     }
 
-    nav .nav-link{
+    nav{
         position: absolute;
-        height: 80px;
-        width: 100px;
-        display: flex;
+        background-color: rgb(151, 144, 144);
         flex-direction: column;
-        align-items: center;
-        color: yellow;
-        border: 2px solid red;
-        top: 30px;
-        right: 440px;
+        top: 110%;
+        left: 50%;
+        transform: translateX(-14%);
+        /* width: 100px; */
+        width: max-content;
+        height: max-content;
+        z-index: 1;
+        padding: 1em 2em;
+        /* display: none; */
         transition: 1s;
+        opacity: 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 30px ;
+        align-items: center;
+    }
+
+    nav ul a{
+        color: yellow;
+        transition: 1s;
+        /* border: 1px solid green; */
+        /* padding:  */
+        
     }
     .fa-bars{
         position: absolute;
@@ -514,8 +545,8 @@ section {
         right: 20px;
         color: whitesmoke;
     }
-     #bar:checked~nav .nav-link{
-        right: 0;
+     #bar:checked~nav{
+        opacity: 1;
     }
 
  
