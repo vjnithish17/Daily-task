@@ -15,7 +15,6 @@
 }
 
 header {
-    position: fixed;
     top: 0;
     /* width: 100%; */
     display: flex;
@@ -28,6 +27,7 @@ header {
 }
 
 .logo {
+    
     /* border: 2px so   lid red; */
     height: 70px;
     width: 250px;
@@ -71,7 +71,7 @@ nav ul li a {
     letter-spacing: 2px;
     text-decoration: none;
     color: #eaeaea;
-    /* padding: 10px 14px; */
+      overflow: hidden;
     padding: -0.9em 2em;
     font-family: "Playfair Display", Helvetica, Arial, sans-serif;
 }
@@ -109,7 +109,7 @@ nav ul a::after {
 
 nav ul a:hover::before,
 a:hover:after {
-    width: 60px;
+    width: 90px;
 }
 
 
@@ -279,7 +279,7 @@ header #add i:hover {
     word-spacing: 2px;
     margin: 60px auto;
     padding: 1px 100px;
-    color: whitesmoke;
+    color: rgb(12, 7, 7);
     font-family: var(---font-head-);
 }
 
@@ -380,7 +380,22 @@ header #add i:hover {
 .body-right img {
     height: 350px;
     width: 600px;
+    border:3px double #D4af37;
+   border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;
     object-fit: cover;
+}
+.body-right{
+     height: 350px;
+    width: 600px;
+      border-top-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+    /* border: 2px solid; */
+    background-color: rgba(112, 128, 144, 0.61);
+}
+.body-right:hover img{
+    
+     clip-path: polygon(100% 9%, 100% 100%, 0 90%, 0 0);
 }
 
 
