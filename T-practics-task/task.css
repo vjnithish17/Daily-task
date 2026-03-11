@@ -5,11 +5,11 @@
 }
 
 .contain{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     height: 90px;
     width: 360px;
     position: relative;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 10px auto;
 }
 h2{
@@ -93,3 +93,29 @@ p{
     margin: 0 auto;
 }
 
+.container{
+    border: 2px solid red;
+    display: flex;
+    /* margin: 45PX; */
+    justify-content: center;
+    flex-wrap: wrap;
+     gap: px;
+}
+.outbox{
+    /* border: 2px solid green; */
+    height: 250px;
+    width: 250px;
+   
+}
+.black{
+    background: #000000;
+}
+
+@media screen and (max-width:550px){
+   
+    .container{
+        justify-content: center;
+        gap: 5px;
+    }
+    
+}
