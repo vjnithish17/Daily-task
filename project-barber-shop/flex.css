@@ -385,6 +385,7 @@ header #add i:hover {
     font-family: var(---FONT-MAIN);
     color: #FFA500;
 }
+
 /* line design end */
 
 .body-left,
@@ -498,6 +499,14 @@ header #add i:hover {
     /* background: wheat; */
 }
 
+.con-header .white {
+    position: absolute;
+    font-size: 30px;
+    top: 25px;
+    left: 212px;
+    color: whitesmoke;
+}
+
 .c-body {
     /* border: 2px solid; */
     display: flex;
@@ -593,8 +602,11 @@ header #add i:hover {
 }
 
 .con-header .black {
-
+    position: absolute;
     color: #000000;
+    font-size: 30px;
+    top: 30px;
+    left: 226px;
 }
 
 .b4 {
@@ -603,7 +615,8 @@ header #add i:hover {
     margin: 0 70px;
     /* display: flex; */
 }
-       /* top box */
+
+/* top box */
 
 .top-box {
     height: 40vh;
@@ -652,7 +665,8 @@ header #add i:hover {
     /* border: 2px solid yellow; */
     width: 100%;
 }
-  /* bottom box */
+
+/* bottom box */
 
 .bottom-box {
     height: 40vh;
@@ -701,7 +715,7 @@ header #add i:hover {
 
 }
 
-           /* Overall controls  */
+/* Overall controls  */
 
 .main-h {
     background: linear-gradient(gray, rgba(0, 0, 0, 0.911), gray);
@@ -763,33 +777,52 @@ header #add i:hover {
     transform: rotate(1deg);
 }
 
-/* page5 servics stard */
+/* page5 Book appoinment stard */
 
 
 .c5 {
     height: 100vh;
-    background: var(--bg-color1-);
-    /* background: white; */
-    position: relative;
+    background: url(/img/Soothing-nature-backgrounds-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.con-header h2 {
-    position: absolute;
-    top: 20px;
-    left: 212px;
-    font-size: 30px;
-    color: white;
-    font-family: var(---font-head-);
+.sub-header {
+    /* border: 2px solid red; */
+    height: 25vh;
+    width: 100%;
+    background: #000000;
 }
 
-.h5 pre {
-    position: absolute;
-    top: 120px;
-    left: 90px;
-    color: white;
+.mid-content {
+    /* border: 2px solid red; */
+    height: 50vh;
+    width: 100%;
 }
 
+.c5-foot {
+    /* border: 2px solid red; */
+    height: 25vh;
+    width: 100%;
+    background: #000000;
+}
 
+/*page6 price plan stared */
+
+
+.con-body-list{
+     border: 2px solid red;
+    height: 70vh;
+    display: flex;
+}
+.li-left{
+ border: 2px solid blue;
+    width:100%;
+}
+.li-right{
+     border: 2px solid blueviolet;
+    width:100%;
+}
 
 
 
