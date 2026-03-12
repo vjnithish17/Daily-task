@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Niconne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --bg-color2-: #141414;
+    --bg-color2-: #DDD8CB;
     --bg-color1-: #0B0B0B;
     ---FONT-MAIN: "Cinzel Decorative", serif;
     ---font-head-: "Playfair Display", serif;
-    --color-p-: linear-gradient(#fff8d3, #fdd384);
 }
 
 * {
@@ -233,7 +232,7 @@ header #add i:hover {
 .main-btn {
     margin: 30px 0;
     padding: 8px 26px;
-    background-color: var(--color-text-);
+    background-color: rgba(0, 0, 0, 0.678);
     color: #FFA500;
     border: 1px solid #ffa60094;
     border-radius: 7px;
@@ -250,7 +249,7 @@ header #add i:hover {
 
 .container {
     /* border: 2px solid green; */
-    height: 80vh;
+    height: 90vh;
     background: var(--bg-color2-);
 
 }
@@ -272,7 +271,7 @@ header #add i:hover {
     /* align-items: center; */
 }
 
-/* page2 About */
+/* page2 About stard */
 
 
 .con-header .t1 {
@@ -281,31 +280,36 @@ header #add i:hover {
     left: 100px;
     font-size: 30px;
     word-spacing: 2px;
-    color: whitesmoke;
+    color: rgb(7, 0, 0);
     font-family: var(---font-head-);
 }
-.con-header .t1::before,.con-header .t1::after{
+
+.con-header .t1::before,
+.con-header .t1::after {
     position: absolute;
     content: "";
-    height: 2px;
+    height: 0.5px;
     width: 0px;
-    background: rgba(219, 182, 17, 0.904);
-    transition: 1s;
-}
-.con-header .t1::after{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.con-header .t1::before{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.con-header:hover .t1:before,.con-header:hover .t1::after{
-    width: 540px;
+    background: rgba(216, 171, 212, 0.904);
+    transition: 2s ease;
 }
 
+.con-header .t1::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.con-header .t1::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.con-header:hover .t1:before,
+.con-header:hover .t1::after {
+    width: 540px;
+}
 
 /* line design */
 
@@ -381,7 +385,6 @@ header #add i:hover {
     font-family: var(---FONT-MAIN);
     color: #FFA500;
 }
-
 /* line design end */
 
 .body-left,
@@ -394,7 +397,7 @@ header #add i:hover {
 }
 
 .body-left h1 {
-    color: white;
+    color: rgb(0, 0, 0);
     position: absolute;
     left: 10px;
     font-size: 35px;
@@ -406,7 +409,7 @@ header #add i:hover {
     position: absolute;
     top: 60px;
     left: 10px;
-    background: linear-gradient(#fff8d3, #fdd384);
+    background: linear-gradient(#ff3c00, #ffa600, orangered);
     color: transparent;
     background-clip: text;
     font-weight: 400;
@@ -419,7 +422,9 @@ header #add i:hover {
     position: absolute;
     top: 140px;
     left: 10px;
-    color: #eaeaea;
+    background: linear-gradient(#555353, #000000e8, #574d4d);
+    color: transparent;
+    background-clip: text;
     text-align: justify;
 }
 
@@ -441,10 +446,11 @@ header #add i:hover {
     overflow: hidden;
     transition: 1s;
     transition-delay: 0.6s;
-    
+
 }
-.bg-s:hover img{
-    transform: scale(2);
+
+.bg-s:hover img {
+    transform: scale(1.1);
 }
 
 .bg-s {
@@ -457,8 +463,9 @@ header #add i:hover {
     position: relative;
 
 }
-.bg-s:hover{
-    box-shadow: 0 0 20px rgba(191,161,74,0.7);
+
+.bg-s:hover {
+    box-shadow: 0 0 20px rgba(191, 161, 74, 0.7);
 }
 
 .bg-shadow {
@@ -467,7 +474,7 @@ header #add i:hover {
     height: 700px;
     width: 700px;
     border-radius: 50%;
-     background: linear-gradient(#fff8d30e, #fdd3840e);
+    background: linear-gradient(#fff8d30e, #fdd3840e);
     z-index: 3;
     opacity: 1;
     bottom: -180px;
@@ -482,7 +489,7 @@ header #add i:hover {
 }
 
 
-/*  page3 what we do */
+/*  page3 why choose royal edge stard*/
 
 
 .c3 {
@@ -502,33 +509,44 @@ header #add i:hover {
     /* border: 2px solid red; */
     height: 300px;
     width: 450px;
-    
+
 }
-.b-left p{
+
+.b-left p {
     font-family: var(---font-head-);
     margin: 20px;
     font-size: 22px;
     font-weight: 500;
     color: #eaeaea;
 }
-.b-left .fa-check{
+
+.b-left .fa-check {
     margin: 0 9px;
     font-size: 20px;
     color: #D4af37;
 }
+
 .b-right {
     /* border: 2px solid red; */
     height: 300px;
     width: 650px;
     position: relative;
     display: flex;
+    /* background-color: #141414; */
 }
-.l-b1{
-     /* border: 2px solid rgb(128, 0, 70); */
+
+.l-b1 {
+    border: 2px solid #80004685;
     width: 197px;
     height: 291px;
     background-image: url(/img/project-img/box-m.jpg);
     background-size: cover;
+    transition: 1s;
+
+}
+
+.l-b1:hover {
+    box-shadow: -1px 0px 8px 1px whitesmoke;
 }
 
 .r-box {
@@ -537,12 +555,8 @@ header #add i:hover {
     width: 500px;
     height: 300px;
 }
-.r-box img{
-    width: 500px;
-    height: 300px;
-    object-fit: cover;   
-}
-.t-box{
+
+.t-box {
     /* border: 2px solid blue; */
     height: 300px;
     display: flex;
@@ -550,66 +564,208 @@ header #add i:hover {
     justify-content: space-evenly;
     gap: 4px;
 }
-.box1{
-    /* border: 2px solid orchid; */
+
+.box1 {
     height: 140px;
     width: 210px;
+    transition: 1s;
 }
-.box1 img{
+
+.box1 img {
+    border: 2px solid #9416646e;
     height: 140px;
     width: 210px;
     object-fit: conver;
+
+}
+
+.box1:hover {
+    box-shadow: -1px 0px 8px 1px whitesmoke;
 }
 
 
-/* page what we do */
+/* page4 Precision in every cut stard */
 
 .c4 {
     /* border: 2px solid orangered; */
-    height: 100vh;
-    background:var(--bg-color2-);
+    height: 104vh;
+    background: #DDD8CB;
+}
+
+.con-header .black {
+
+    color: #000000;
 }
 
 .b4 {
-    /* height: 80vh; */
-    border: 2px solid red;
+    height: 80vh;
+    /* border: 2px solid red; */
+    margin: 0 70px;
+    /* display: flex; */
+}
+       /* top box */
+
+.top-box {
+    height: 40vh;
+    /* border: 2px solid blue; */
     display: flex;
-    /* margin: 45PX; */
-    justify-content: center;
-    flex-wrap: wrap;
+    cursor: default;
 }
 
-.outbox {
+.t-leftbx {
     /* border: 2px solid green; */
-    height: 250px;
-    width: 250px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.t1-leftimg {
+    /* border: 2px solid rgb(255, 114, 13); */
+    width: 50%;
+    background-color: #eaeaea04;
+    padding: 30px 35px;
+    object-fit: cover;
+    /* height: 100%; */
+}
+
+.t1-rightcon {
+    /* border: 2px solid saddlebrown; */
+    width: 100%;
+    /* height: 100%; */
+}
+
+.t-rightbx {
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+}
+
+.t2-leftimg {
+    /* border: 2px solid yellow; */
+    width: 50%;
+    /* background-color: #eaeaea00; */
+    padding: 30px 35px;
+    object-fit: cover;
+}
+
+.t2-rightcon {
+    /* border: 2px solid yellow; */
+    width: 100%;
+}
+  /* bottom box */
+
+.bottom-box {
+    height: 40vh;
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    cursor: default;
+}
+
+.b-leftbox {
+    /* border: 2px solid orangered; */
+    width: 50%;
+    display: flex;
+}
+
+.b1-leftimg {
+    width: 40%;
+    /* background-color: #eaeaea00; */
+    padding: 26px 35px;
+    object-fit: cover;
 
 }
 
-.black {
-    background: #fff8f896;
+.b1-rightcon {
+    /* border: 2px solid saddlebrown; */
+    width: 100%;
+
 }
 
+.b-rightbox {
+    /* border: 2px solid orangered; */
+    width: 50%;
+    display: flex;
+}
+
+.b2-leftimg {
+    width: 40%;
+    /* background-color: #eaeaea; */
+    padding: 26px 35px;
+    object-fit: cover;
+
+}
+
+.b2-rightcon {
+    /* border: 2px solid saddlebrown; */
+    width: 100%;
+
+}
+
+           /* Overall controls  */
+
+.main-h {
+    background: linear-gradient(gray, rgba(0, 0, 0, 0.911), gray);
+    color: transparent;
+    background-clip: text;
+    margin: 12px 0;
+    font-family: var(---FONT-MAIN);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main-p {
+    font-size: 15px;
+    color: gray;
+}
+
+.main-button {
+    margin: 17px 0;
+    padding: 5px 9px;
+    border-radius: 1px;
+    border: 1px solid black;
+    font-family: var(---font-head-);
+    font-size: 19px;
+    font-weight: 200;
+    color: white;
+    background: rgba(0, 0, 0, 0.884);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.main-button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 36.5px;
+    width: 0px;
+    background-color: #cc7e30;
+    transition: 1s;
+    opacity: 1;
+}
+
+.main-button:hover:before {
+    width: 130px;
+    opacity: 0;
+
+}
+
+.main-button i {
+    font-size: 15px;
+    transform: rotate(-95DEG);
+    transition: 1s;
+    margin: 0 5px;
+}
+
+.main-button:hover i {
+    transform: rotate(1deg);
+}
+
+/* page5 servics stard */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* page4 servics */
 .c5 {
     height: 100vh;
     background: var(--bg-color1-);
@@ -633,92 +789,38 @@ header #add i:hover {
     color: white;
 }
 
-section {
-    position: absolute;
-    top: 90px;
-    /* border: 2px solid yellow; */
-    height: 50vh;
-    display: flex;
-    gap: 3px;
-    position: relative;
-}
 
-.s-box1 {
-    /* position: absolute; */
-    /* border: 2px solid red; */
-    width: 100%;
-    transition: 1s;
-    font-family: Flaticon;
-}
 
-.out {
-    /* border: 2px solid blueviolet; */
-    height: 20vh;
-}
 
-.out .s-icon {
-    position: absolute;
-    border: 2px solid rgb(255, 230, 0);
-    height: 60px;
-    width: 60px;
-    margin: 30px 130px auto;
-}
 
-.out .s-icon i {
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    color: white;
-    font-size: 27px;
-}
-.s-box1:hover i{
-     transform: rotate(-45deg);
-   color: yellow;
-}
-.s-box1:hover .s-icon {
-    transform: rotate(45deg);
-    box-shadow: 0 0 20px #bfa14a;
-      background: #ddb439ce;
-}
 
-.in {
-    border: 2px solid rgb(86, 226, 43);
-    height: 20vh;
-    width: 45vh;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .fa-bars,
 #bar {
     display: none;
 }
-
-/* page5 price */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width:576px) {
 
