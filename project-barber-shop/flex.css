@@ -183,7 +183,7 @@ header #add i:hover {
 
 .home {
     height: 100vh;
-    background: url(/img/project-img/bg.jpg);
+    background: url(/img/project-img/bgmain.avif);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -777,12 +777,12 @@ header #add i:hover {
     transform: rotate(1deg);
 }
 
-/* page5 Book appoinment stard */
+/* page Book appoinment stard */
 
 
-.c5 {
+.c6{
     height: 100vh;
-    background: url(/img/Soothing-nature-backgrounds-2.jpg);
+    background: url(/img/project-img/bg-book.avif);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -791,7 +791,7 @@ header #add i:hover {
     /* border: 2px solid red; */
     height: 25vh;
     width: 100%;
-    background: #000000;
+    background:var(--bg-color2-);
 }
 
 .mid-content {
@@ -804,25 +804,136 @@ header #add i:hover {
     /* border: 2px solid red; */
     height: 25vh;
     width: 100%;
-    background: #000000;
+    background:var(--bg-color2-);
 }
 
-/*page6 price plan stared */
+/*page5 price plan stared */
 
-
-.con-body-list{
-     border: 2px solid red;
+.c5{
+    height: 255vh;
+    background: var(--bg-color1-);
+}
+.small-head{
+    height: 15vh;
+}
+.con-body-list1{
+     /* border: 2px solid red; */
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+.con-body-list2{
+     /* border: 2px solid red; */
     height: 70vh;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+.con-body-list3{
+     /* border: 2px solid red; */
+    height: 70vh;
+    width: 100%;
+    height: 80vh;
     display: flex;
 }
 .li-left{
- border: 2px solid blue;
+ /* border: 2px solid blue; */
     width:100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.li-left img{
+    /* background:gray; */
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.li-center{
+     /* border: 2px solid blue; */
+    width:100%;
+    height: 80vh;
+}
+.li-center img{
+    width: 100%;
+    height:100%;
+    object-fit:fill;
 }
 .li-right{
-     border: 2px solid blueviolet;
+     /* border: 2px solid blueviolet; */
     width:100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
 }
+.li-right img{
+    width: 100%;
+    height:100%;
+    object-fit:fill;
+}
+.li-right button{
+    padding: 10px;
+    align-self: center;
+    cursor:pointer;
+}
+.list-content{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px 0;
+    color: white; 
+
+}
+.list-content h4{
+    color: #bb9167;
+    font-family: var(---FONT-MAIN);
+}
+.list-content h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list-content p{
+     margin-top: 30px;
+     font-size: 20px;
+     font-family: var(---font-head-);
+}
+.list-content span{
+    margin-top: 30px;
+    color:#bb9167;
+}
+.list-content .line-clr{
+    color:gray;
+}
+.line{
+    display: flex;
+    gap: 8px;
+}
+.list-main-con{
+    /* border: 2px solid yellow; */
+    height: 500px;
+    width: 400px;  
+}
+.bot-box{
+    /* border: 2px solid red; */
+    align-items: end;
+    height: 50%;
+}
+
+.list-main-con p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555353;
+    text-align:justify;
+    font-family: var(---font-head-);
+
+}
+.list-main-con h1{
+    color: whitesmoke;
+    font-size: 36px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+}
+
 
 
 
