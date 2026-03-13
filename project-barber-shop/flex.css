@@ -273,7 +273,12 @@ header #add i:hover {
 
 /* page2 About stard */
 
-
+.c2{
+     height: 135vh;
+    background: url(/img/project-img/bgmain2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .con-header .t1 {
     position: absolute;
     top: 30px;
@@ -391,23 +396,23 @@ header #add i:hover {
 .body-left,
 .body-right {
     /* border: 2px solid #D4af37; */
-    height: 350px;
+    height: 140vh;
     width: 500px;
     margin-top: 20px;
     position: relative;
 }
 
-.body-left h1 {
-    color: rgb(0, 0, 0);
-    position: absolute;
+.bg-s h1 {
+  
     left: 10px;
-    font-size: 35px;
-    font-weight: 500;
-    font-family: var(---font-head-);
+    margin-top: 90px;
+    font-size: 25px;
+    font-weight: 6x00;
+    font-family: var(---font-main-);
 }
 
-.body-left h3 {
-    position: absolute;
+.bg-s h3 {
+    /* position: absolute; */
     top: 60px;
     left: 10px;
     background: linear-gradient(#ff3c00, #ffa600, orangered);
@@ -415,14 +420,15 @@ header #add i:hover {
     background-clip: text;
     font-weight: 400;
     font-family: var(---font-head-);
-    font-size: 25px;
+    font-size: 45px;
 
 }
-
-.body-left p {
-    position: absolute;
+.bg-s p {
+    /* position: absolute; */
     top: 140px;
     left: 10px;
+    margin-top: 25px;
+    font-size: 18px;
     background: linear-gradient(#555353, #000000e8, #574d4d);
     color: transparent;
     background-clip: text;
@@ -436,59 +442,10 @@ header #add i:hover {
 }
 
 .body-right img {
-    height: 350px;
+    height: 140vh;
     width: 600px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
-    border: 1px solid #D4af37;
-    position: absolute;
-    transform: scale(1);
-    overflow: hidden;
-    transition: 1s;
-    transition-delay: 0.6s;
-
+  
 }
-
-.bg-s:hover img {
-    transform: scale(1.1);
-}
-
-.bg-s {
-    height: 350px;
-    width: 600px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    /* border: 2px solid #D4af37; */
-    overflow: hidden;
-    position: relative;
-
-}
-
-.bg-s:hover {
-    box-shadow: 0 0 20px rgba(191, 161, 74, 0.7);
-}
-
-.bg-shadow {
-    position: absolute;
-    /* border: 2px solid red; */
-    height: 700px;
-    width: 700px;
-    border-radius: 50%;
-    background: linear-gradient(#fff8d30e, #fdd3840e);
-    z-index: 3;
-    opacity: 1;
-    bottom: -180px;
-    left: -60px;
-    transform: scale(1);
-    transition: 1s;
-}
-
-.bg-s:hover .bg-shadow {
-    opacity: 0;
-    transform: scale(0);
-}
-
 
 /*  page3 why choose royal edge stard*/
 
@@ -511,6 +468,7 @@ header #add i:hover {
     /* border: 2px solid; */
     display: flex;
     justify-content: space-evenly;
+    margin-top: 20px;
 
 }
 
@@ -777,36 +735,6 @@ header #add i:hover {
     transform: rotate(1deg);
 }
 
-/* page Book appoinment stard */
-
-
-.c6{
-    height: 100vh;
-    background: url(/img/project-img/bg-book.avif);
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.sub-header {
-    /* border: 2px solid red; */
-    height: 25vh;
-    width: 100%;
-    background:var(--bg-color2-);
-}
-
-.mid-content {
-    /* border: 2px solid red; */
-    height: 50vh;
-    width: 100%;
-}
-
-.c5-foot {
-    /* border: 2px solid red; */
-    height: 25vh;
-    width: 100%;
-    background:var(--bg-color2-);
-}
-
 /*page5 price plan stared */
 
 .c5{
@@ -934,6 +862,73 @@ header #add i:hover {
     letter-spacing: 2px;
 }
 
+/* page Book appoinment stard */
+
+
+.c6{
+    height: 100vh;
+    background: url(/img/project-img/bg-book1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.sub-header {
+    /* border: 2px solid red; */
+    height: 20vh;
+    width: 100%;
+    background:var(--bg-color1-);
+}
+
+.mid-content {
+    /* border: 2px solid red; */
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mid-box{
+    /* border: 2px solid red; */
+    width: 700px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+}
+.mid-box h3{
+  font-family: var(---font-main-);
+     font-size: 20px;
+    margin-top: 70px;
+     align-self: center;
+}
+.mid-box h1{
+    font-size: 3rem;
+    align-self: center;
+    color:orangered;
+}
+.mid-box p{
+    font-family: var(---font-head-);
+    margin-top: 20px;
+     text-align: justify;
+     font-size: 18px;
+     color:var(--bg-color2-);
+}
+.mid-box button{
+    border-radius: 5px;
+    margin: 10px 250px;
+    padding: 10px;
+}
+.c5-foot{
+    /* border: 2px solid red; */
+    height: 20vh;
+    width: 100%;
+    background:var(--bg-color1-);
+}
+
+
+.h7 .t7{
+    margin: 0px 200px;
+    font-size: 30px;
+    padding: 30px 0;
+}
 
 
 
