@@ -190,7 +190,7 @@ header #add i:hover {
 
 .h-content {
     position: absolute;
-    /* border: 2px solid; */
+    border: 2px solid;
     width: 480px;
     cursor: default;
     /* display: flex; */
@@ -405,8 +405,7 @@ header #add i:hover {
 
 /* line design end */
 
-.body-left,
-.body-right {
+.body-left,.body-right {
     /* border: 2px solid #D4af37; */
     height: 140vh;
     width: 500px;
@@ -517,7 +516,9 @@ header #add i:hover {
     color: #D4af37;
 }
 
+
 .b-right {
+    
     /* border: 2px solid red; */
     height: 300px;
     width: 650px;
@@ -1011,10 +1012,18 @@ header #add i:hover {
 
 .in-box-p {
     /* position: absolute; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    background-color: rgba(255, 255, 255, 0.664);
     height: 220px;
     width: 300px;
 }
+.in-box-p img{
+     height: 220px;
+    width: 300px;
+    padding: 1px;
+    object-fit: contain;
+}
+
 
 .foot-box-p {
     /* position: absolute; */
@@ -1218,7 +1227,6 @@ header #add i:hover {
 }
 
 /* contact */
-
 .body{
     /* border: 2px solid red; */
     display: flex;
@@ -1246,11 +1254,15 @@ header #add i:hover {
      margin:70px 130px;
       width: 350px;
 }
-form input{
-    padding: 10px;
+form input{ 
+   padding: 10px;
+    border: none;
 }
 form label{
     font-size: 20px;
+}
+form button{
+     padding: 10px;
 }
 
 
