@@ -1217,9 +1217,41 @@ header #add i:hover {
 
 }
 
+/* contact */
 
-
-
+.body{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.left,.right{
+    /* border: 2px solid blue; */
+    height: 60vh;
+    width: 600px;
+    /* margin-top: 50px; */
+}
+.left iframe{
+    margin-top:30px;
+      height: 80vh;
+    width: 700px;
+    object-fit: cover;
+}
+.right form{
+    display: flex;
+    /* justify-content: center; */
+    /* margin-top:2px; */
+    flex-direction: column;
+}
+.right{
+     margin:70px 130px;
+      width: 350px;
+}
+form input{
+    padding: 10px;
+}
+form label{
+    font-size: 20px;
+}
 
 
 
